@@ -2,7 +2,7 @@ import { SyntheticEvent, useState } from "react";
 import { Employee } from "../../model/Employee.model";
 
 interface CreateEmployeeFormProps {
-  onEmplAdd: (empl: Employee) => Promise<string>;
+  onEmplAdd: (empl: Employee) => Promise<string | undefined>;
 }
 
 export function EmployeeForm(props: CreateEmployeeFormProps) {
