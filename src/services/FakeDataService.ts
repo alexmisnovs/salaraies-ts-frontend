@@ -25,3 +25,7 @@ export async function getEmployees(): Promise<Employee[]> {
     },
   ];
 }
+
+export async function createEmployee(empl: Employee) {
+  return empl.name + "123";
+}
